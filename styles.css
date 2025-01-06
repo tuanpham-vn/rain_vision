@@ -1,0 +1,281 @@
+/* Base styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Layout */
+.container {
+    position: relative;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+#map {
+    width: 100%;
+    height: 100vh;
+    margin-top: 0;
+    border: none;
+    position: absolute;
+    z-index: 1;
+}
+
+/* Typography */
+h1 {
+    margin-top: 20px;
+    color: #333;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin: 0 0 10px 0;
+    font-weight: 500;
+    color: #333;
+}
+
+/* Controls */
+.overlay-controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    z-index: 1000;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+/* Buttons */
+.control-btn {
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    color: #444;
+}
+
+.control-btn:hover {
+    background: #f5f5f5;
+    border-color: #d0d0d0;
+    transform: scale(1.05);
+}
+
+.control-btn:active {
+    transform: scale(0.95);
+}
+
+.control-btn i {
+    font-size: 14px;
+}
+
+/* Slider */
+#timeSlider {
+    flex: 1;
+    height: 4px;
+    -webkit-appearance: none;
+    background: #e0e0e0;
+    border-radius: 2px;
+    outline: none;
+    margin: 0 20px;
+}
+
+#timeSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #ffffff;
+    border: 2px solid #2196F3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#timeSlider::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+    background: #2196F3;
+}
+
+/* Legend */
+.legend {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.legend-gradient {
+    width: 20px;
+    height: 200px;
+    background: linear-gradient(to bottom, 
+        #ff0000, #ffff00, #00ff00, 
+        #8be699, #0000ff, #8f8fe6, #c0c0e3
+    );
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.legend-labels {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+    vertical-align: top;
+}
+
+.legend-labels span {
+    font-size: 10px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Layer Control */
+.layer-control {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.layer-control h3 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #333;
+}
+
+.layer-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.layer-btn {
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.layer-btn:hover {
+    background: #f5f5f5;
+    border-color: #d0d0d0;
+}
+
+.layer-btn.active {
+    background: #2196F3;
+    border-color: #1976D2;
+    color: white;
+}
+
+/* Speed and Time Display */
+.speed-display, .time-display {
+    background: #f0f0f0;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    text-align: center;
+}
+
+.speed-display {
+    padding: 2px 8px;
+    min-width: 10px;
+}
+
+.time-display {
+    padding: 4px 12px;
+    min-width: 120px;
+}
+
+.speed-controls {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-left: 20px;
+}
+
+/* Date Time Picker */
+.date-time-picker {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.picker-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-inputs {
+    display: flex;
+    gap: 8px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.input-group label {
+    color: #444;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.input-group input[type="date"],
+.input-group input[type="time"] {
+    padding: 4px 6px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #333;
+    width: auto;
+}
+
+.fetch-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+.fetch-btn i {
+    font-size: 12px;
+}
+
