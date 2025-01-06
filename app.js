@@ -41,17 +41,17 @@ const layerData = {
         ],
     himawari: [
         { url: 'images/himawari/2025-01-04_2100.png', time: '08:00', amount: '2.5' },
-        { url: 'images/himawari/2025-01-04_2110.png', time: '08:20', amount: '3.2' },
-        { url: 'images/himawari/2025-01-04_2120.png', time: '08:40', amount: '4.1' },
-        { url: 'images/himawari/2025-01-04_2130.png', time: '09:00', amount: '5.7' },
-        { url: 'images/himawari/2025-01-04_2140.png', time: '09:20', amount: '4.8' },
-        { url: 'images/himawari/2025-01-04_2150.png', time: '09:40', amount: '3.9' },
-        { url: 'images/himawari/2025-01-04_2200.png', time: '10:00', amount: '3.3' },
-        { url: 'images/himawari/2025-01-04_2210.png', time: '10:20', amount: '2.8' },
-        { url: 'images/himawari/2025-01-04_2220.png', time: '10:40', amount: '2.2' },
-        { url: 'images/himawari/2025-01-04_2230.png', time: '11:00', amount: '1.5' },
-        { url: 'images/himawari/2025-01-04_2240.png', time: '11:20', amount: '1.5' },
-        { url: 'images/himawari/2025-01-04_2250.png', time: '11:40', amount: '1.5' }
+        { url: 'images/himawari/2025-01-04_2110.png', time: '08:10', amount: '3.2' },
+        { url: 'images/himawari/2025-01-04_2120.png', time: '08:20', amount: '4.1' },
+        { url: 'images/himawari/2025-01-04_2130.png', time: '08:30', amount: '5.7' },
+        { url: 'images/himawari/2025-01-04_2140.png', time: '08:40', amount: '4.8' },
+        { url: 'images/himawari/2025-01-04_2150.png', time: '08:50', amount: '3.9' },
+        { url: 'images/himawari/2025-01-04_2200.png', time: '09:00', amount: '3.3' },
+        { url: 'images/himawari/2025-01-04_2210.png', time: '09:10', amount: '2.8' },
+        { url: 'images/himawari/2025-01-04_2220.png', time: '09:20', amount: '2.2' },
+        { url: 'images/himawari/2025-01-04_2230.png', time: '09:30', amount: '1.5' },
+        { url: 'images/himawari/2025-01-04_2240.png', time: '09:40', amount: '1.5' },
+        { url: 'images/himawari/2025-01-04_2250.png', time: '09:50', amount: '1.5' }
     ]
 };
 const layerIntervals = {
