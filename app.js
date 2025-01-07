@@ -37,7 +37,12 @@ const layerData = {
         { url: 'images/rainsat/2025-01-06_0920_colored.png', time: '09:15', amount: '5.0' },
         { url: 'images/rainsat/2025-01-06_0925_colored.png', time: '09:20', amount: '4.8' },
         { url: 'images/rainsat/2025-01-06_0930_colored.png', time: '09:25', amount: '4.6' },
-        { url: 'images/rainsat/2025-01-06_0935_colored.png', time: '09:30', amount: '4.4' }
+        { url: 'images/rainsat/2025-01-06_0935_colored.png', time: '09:30', amount: '4.4' },
+        { url: 'images/rainsat/2025-01-06_0910_colored.png', time: '09:35', amount: '5.3' },
+        { url: 'images/rainsat/2025-01-06_0920_colored.png', time: '09:40', amount: '5.0' },
+        { url: 'images/rainsat/2025-01-06_0925_colored.png', time: '09:45', amount: '4.8' },
+        { url: 'images/rainsat/2025-01-06_0930_colored.png', time: '09:50', amount: '4.6' },
+        { url: 'images/rainsat/2025-01-06_0935_colored.png', time: '10:00', amount: '4.4' }
         ],
     himawari: [
         { url: 'images/himawari/2025-01-04_2100.png', time: '08:00', amount: '2.5' },
@@ -231,6 +236,14 @@ document.querySelectorAll('.layer-btn').forEach(button => {
         currentLayer = button.dataset.layer;
         currentData = layerData[currentLayer];
         
+        // Update slider max value based on layer type
+        if (currentLayer === 'himawari') {
+            timeSlider.min = 0;
+            timeSlider.max = 11;
+        } else {
+            timeSlider.min = 0;
+            timeSlider.max = 23;
+        }
         // Reset animation state
         currentIndex = 0;
         isPlaying = false;
