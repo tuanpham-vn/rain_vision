@@ -19,44 +19,44 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
 // amount 
 const layerData = {
     rainsat: [
-        { url: 'images/rainsat/2025-01-06_0800_colored.png', time: '08:00', amount: '2.5' },
-        { url: 'images/rainsat/2025-01-06_0805_colored.png', time: '08:05', amount: '2.7' },
-        { url: 'images/rainsat/2025-01-06_0810_colored.png', time: '08:10', amount: '2.9' },
-        { url: 'images/rainsat/2025-01-06_0815_colored.png', time: '08:15', amount: '3.0' },
-        { url: 'images/rainsat/2025-01-06_0820_colored.png', time: '08:20', amount: '3.2' },
-        { url: 'images/rainsat/2025-01-06_0825_colored.png', time: '08:25', amount: '3.5' },
-        { url: 'images/rainsat/2025-01-06_0830_colored.png', time: '08:30', amount: '3.7' },
-        { url: 'images/rainsat/2025-01-06_0835_colored.png', time: '08:35', amount: '3.9' },
-        { url: 'images/rainsat/2025-01-06_0840_colored.png', time: '08:40', amount: '4.1' },
-        { url: 'images/rainsat/2025-01-06_0845_colored.png', time: '08:45', amount: '4.5' },
-        { url: 'images/rainsat/2025-01-06_0850_colored.png', time: '08:50', amount: '4.9' },
-        { url: 'images/rainsat/2025-01-06_0855_colored.png', time: '08:55', amount: '5.3' },
-        { url: 'images/rainsat/2025-01-06_0900_colored.png', time: '09:00', amount: '5.7' },
-        { url: 'images/rainsat/2025-01-06_0905_colored.png', time: '09:05', amount: '5.5' },
-        { url: 'images/rainsat/2025-01-06_0910_colored.png', time: '09:10', amount: '5.3' },
-        { url: 'images/rainsat/2025-01-06_0920_colored.png', time: '09:15', amount: '5.0' },
-        { url: 'images/rainsat/2025-01-06_0925_colored.png', time: '09:20', amount: '4.8' },
-        { url: 'images/rainsat/2025-01-06_0930_colored.png', time: '09:25', amount: '4.6' },
-        { url: 'images/rainsat/2025-01-06_0935_colored.png', time: '09:30', amount: '4.4' },
-        { url: 'images/rainsat/2025-01-06_0910_colored.png', time: '09:35', amount: '5.3' },
-        { url: 'images/rainsat/2025-01-06_0920_colored.png', time: '09:40', amount: '5.0' },
-        { url: 'images/rainsat/2025-01-06_0925_colored.png', time: '09:45', amount: '4.8' },
-        { url: 'images/rainsat/2025-01-06_0930_colored.png', time: '09:50', amount: '4.6' },
-        { url: 'images/rainsat/2025-01-06_0935_colored.png', time: '10:00', amount: '4.4' }
+        { url: 'images/rainsat/2025-01-06_0800_colored.png', time: '2025-01-06 08:00', amount: '2.5' },
+        { url: 'images/rainsat/2025-01-06_0805_colored.png', time: '2025-01-06 08:05', amount: '2.7' },
+        { url: 'images/rainsat/2025-01-06_0810_colored.png', time: '2025-01-06 08:10', amount: '2.9' },
+        { url: 'images/rainsat/2025-01-06_0815_colored.png', time: '2025-01-06 08:15', amount: '3.0' },
+        { url: 'images/rainsat/2025-01-06_0820_colored.png', time: '2025-01-06 08:20', amount: '3.2' },
+        { url: 'images/rainsat/2025-01-06_0825_colored.png', time: '2025-01-06 08:25', amount: '3.5' },
+        { url: 'images/rainsat/2025-01-06_0830_colored.png', time: '2025-01-06 08:30', amount: '3.7' },
+        { url: 'images/rainsat/2025-01-06_0835_colored.png', time: '2025-01-06 08:35', amount: '3.9' },
+        { url: 'images/rainsat/2025-01-06_0840_colored.png', time: '2025-01-06 08:40', amount: '4.1' },
+        { url: 'images/rainsat/2025-01-06_0845_colored.png', time: '2025-01-06 08:45', amount: '4.5' },
+        { url: 'images/rainsat/2025-01-06_0850_colored.png', time: '2025-01-06 08:50', amount: '4.9' },
+        { url: 'images/rainsat/2025-01-06_0855_colored.png', time: '2025-01-06 08:55', amount: '5.3' },
+        { url: 'images/rainsat/2025-01-06_0900_colored.png', time: '2025-01-06 09:00', amount: '5.7' },
+        { url: 'images/rainsat/2025-01-06_0905_colored.png', time: '2025-01-06 09:05', amount: '5.5' },
+        { url: 'images/rainsat/2025-01-06_0910_colored.png', time: '2025-01-06 09:10', amount: '5.3' },
+        { url: 'images/rainsat/2025-01-06_0920_colored.png', time: '2025-01-06 09:15', amount: '5.0' },
+        { url: 'images/rainsat/2025-01-06_0925_colored.png', time: '2025-01-06 09:20', amount: '4.8' },
+        { url: 'images/rainsat/2025-01-06_0930_colored.png', time: '2025-01-06 09:25', amount: '4.6' },
+        { url: 'images/rainsat/2025-01-06_0935_colored.png', time: '2025-01-06 09:30', amount: '4.4' },
+        { url: 'images/rainsat/2025-01-06_0910_colored.png', time: '2025-01-06 09:35', amount: '5.3' },
+        { url: 'images/rainsat/2025-01-06_0920_colored.png', time: '2025-01-06 09:40', amount: '5.0' },
+        { url: 'images/rainsat/2025-01-06_0925_colored.png', time: '2025-01-06 09:45', amount: '4.8' },
+        { url: 'images/rainsat/2025-01-06_0930_colored.png', time: '2025-01-06 09:50', amount: '4.6' },
+        { url: 'images/rainsat/2025-01-06_0935_colored.png', time: '2025-01-06 10:00', amount: '4.4' }
         ],
     himawari: [
-        { url: 'images/himawari/2025-01-04_2100.png', time: '08:00', amount: '2.5' },
-        { url: 'images/himawari/2025-01-04_2110.png', time: '08:10', amount: '3.2' },
-        { url: 'images/himawari/2025-01-04_2120.png', time: '08:20', amount: '4.1' },
-        { url: 'images/himawari/2025-01-04_2130.png', time: '08:30', amount: '5.7' },
-        { url: 'images/himawari/2025-01-04_2140.png', time: '08:40', amount: '4.8' },
-        { url: 'images/himawari/2025-01-04_2150.png', time: '08:50', amount: '3.9' },
-        { url: 'images/himawari/2025-01-04_2200.png', time: '09:00', amount: '3.3' },
-        { url: 'images/himawari/2025-01-04_2210.png', time: '09:10', amount: '2.8' },
-        { url: 'images/himawari/2025-01-04_2220.png', time: '09:20', amount: '2.2' },
-        { url: 'images/himawari/2025-01-04_2230.png', time: '09:30', amount: '1.5' },
-        { url: 'images/himawari/2025-01-04_2240.png', time: '09:40', amount: '1.5' },
-        { url: 'images/himawari/2025-01-04_2250.png', time: '09:50', amount: '1.5' }
+        { url: 'images/himawari/2025-01-04_2100.png', time: '2025-01-04 21:00', amount: '2.5' },
+        { url: 'images/himawari/2025-01-04_2110.png', time: '2025-01-04 21:10', amount: '3.2' },
+        { url: 'images/himawari/2025-01-04_2120.png', time: '2025-01-04 21:20', amount: '4.1' },
+        { url: 'images/himawari/2025-01-04_2130.png', time: '2025-01-04 21:30', amount: '5.7' },
+        { url: 'images/himawari/2025-01-04_2140.png', time: '2025-01-04 21:40', amount: '4.8' },
+        { url: 'images/himawari/2025-01-04_2150.png', time: '2025-01-04 21:50', amount: '3.9' },
+        { url: 'images/himawari/2025-01-04_2200.png', time: '2025-01-04 22:00', amount: '3.3' },
+        { url: 'images/himawari/2025-01-04_2210.png', time: '2025-01-04 22:10', amount: '2.8' },
+        { url: 'images/himawari/2025-01-04_2220.png', time: '2025-01-04 22:20', amount: '2.2' },
+        { url: 'images/himawari/2025-01-04_2230.png', time: '2025-01-04 22:30', amount: '1.5' },
+        { url: 'images/himawari/2025-01-04_2240.png', time: '2025-01-04 22:40', amount: '1.5' },
+        { url: 'images/himawari/2025-01-04_2250.png', time: '2025-01-04 22:50', amount: '1.5' }
     ]
 };
 const layerIntervals = {
@@ -89,43 +89,32 @@ const playButton = document.getElementById('playButton');
 const timeSlider = document.getElementById('timeSlider');
 const currentTime = document.getElementById('currentTime');
 
-function formatDateTime(timeStr) {
-    // Extract date from the image URL
-    const currentImage = currentData[currentIndex].url;
-    const dateMatch = currentImage.match(/\d{8}/); // Matches YYYYMMDD format
+function formatDateTime(dateTimeStr) {
+    // Kiểm tra nếu chuỗi đầu vào có định dạng "YYYY-MM-DD HH:mm"
+    const match = dateTimeStr.match(/^(\d{4})-(\d{2})-(\d{2})\s+(\d{2}):(\d{2})$/);
     
-    if (dateMatch) {
-        const year = dateMatch[0].substring(0, 4);
-        const month = dateMatch[0].substring(4, 6);
-        const day = dateMatch[0].substring(6, 8);
-        
-        // Convert month number to month name
+    if (match) {
+        const [_, year, month, day, hours, minutes] = match;
         const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 
                           'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
         const monthName = monthNames[parseInt(month) - 1];
         
-        // Ensure time is in 24-hour format
-        // If timeStr is already in 24-hour format, use it directly
-        // Otherwise, convert it to 24-hour format
-        let formattedTime = timeStr;
-        if (timeStr.includes('AM') || timeStr.includes('PM')) {
-            const [time, period] = timeStr.split(' ');
-            const [hours, minutes] = time.split(':');
-            let hour = parseInt(hours);
-            
-            if (period === 'PM' && hour !== 12) {
-                hour += 12;
-            } else if (period === 'AM' && hour === 12) {
-                hour = 0;
-            }
-            
-            formattedTime = `${hour.toString().padStart(2, '0')}:${minutes}`;
-        }
-        
-        return `${monthName} ${parseInt(day)}, ${formattedTime}`;
+        // Trả về chuỗi đã định dạng với ký tự xuống dòng
+        return `${monthName} ${parseInt(day)}\n${hours}:${minutes}`;
     }
+
+    // Nếu không khớp định dạng, trả về chuỗi gốc
+    return dateTimeStr;
+}
+
+function updateTimeDisplayPosition() {
+    const slider = document.getElementById('timeSlider');
+    const timeDisplay = document.getElementById('currentTime');
+    const sliderRect = slider.getBoundingClientRect();
+    const thumbPosition = (slider.value - slider.min) / (slider.max - slider.min);
+    const thumbOffset = thumbPosition * sliderRect.width;
     
-    return timeStr;
+    timeDisplay.style.left = `${thumbOffset}px`;
 }
 
 function updateMap(index) {
@@ -139,10 +128,7 @@ function updateMap(index) {
     
     timeSlider.value = index;
     currentTime.textContent = formatDateTime(currentData[index].time);
-    
-    // Update rainfall info
-    // document.getElementById('timestamp').textContent = `Time: ${currentData[index].time}`;
-    // document.getElementById('rainfallAmount').textContent = `Rainfall: ${currentData[index].amount} mm`;
+    updateTimeDisplayPosition();
 }
 
 function playAnimation() {
@@ -204,11 +190,12 @@ playButton.addEventListener('click', () => {
 timeSlider.addEventListener('input', (e) => {
     currentIndex = parseInt(e.target.value);
     updateMap(currentIndex);
-    
-    // Stop playing when manually adjusting
+
     if (isPlaying) {
         isPlaying = false;
-        playButton.textContent = 'Play';
+        const playIcon = playButton.querySelector('i');
+        playIcon.classList.remove('fa-pause');
+        playIcon.classList.add('fa-play');
         clearInterval(playInterval);
     }
 });
@@ -235,7 +222,7 @@ document.querySelectorAll('.layer-btn').forEach(button => {
         // Update current layer and data
         currentLayer = button.dataset.layer;
         currentData = layerData[currentLayer];
-        
+
         // Update slider max value based on layer type
         if (currentLayer === 'himawari') {
             timeSlider.min = 0;
@@ -320,3 +307,6 @@ fetchButton.addEventListener('click', async () => {
 
 // Initial map update
 updateMap(0);
+
+// Thêm event listener cho window resize
+window.addEventListener('resize', updateTimeDisplayPosition);

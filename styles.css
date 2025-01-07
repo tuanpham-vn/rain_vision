@@ -87,14 +87,28 @@ h2 {
 }
 
 /* Slider */
-#timeSlider {
+.slider-container {
+    position: relative;
     flex: 1;
-    height: 4px;
-    -webkit-appearance: none;
-    background: #e0e0e0;
-    border-radius: 2px;
-    outline: none;
     margin: 0 20px;
+    padding-top: 25px; /* Tạo khoảng trống cho time display */
+}
+
+.time-display {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    pointer-events: none;
+}
+
+#timeSlider {
+    width: 100%;
+    margin: 0;
 }
 
 #timeSlider::-webkit-slider-thumb {
@@ -128,8 +142,8 @@ h2 {
 .legend-gradient {
     width: 20px;
     height: 200px;
-    background: linear-gradient(to bottom, 
-        #ff0000, #ffff00, #00ff00, 
+    background: linear-gradient(to bottom,
+        #ff0000, #ffff00, #00ff00,
         #8be699, #0000ff, #8f8fe6, #c0c0e3
     );
     margin-right: 10px;
@@ -199,9 +213,9 @@ h2 {
 
 /* Speed and Time Display */
 .speed-display, .time-display {
-    background: #f0f0f0;
-    border-radius: 12px;
-    font-size: 14px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 12px;
     font-weight: 500;
     color: #444;
     text-align: center;
@@ -212,9 +226,15 @@ h2 {
     min-width: 10px;
 }
 
+
 .time-display {
     padding: 4px 12px;
-    min-width: 120px;
+    min-width: 60px;
+    white-space: pre-line;
+    text-align: center;
+    line-height: 1.0;
+    position: absolute;
+    top: -10px;
 }
 
 .speed-controls {
