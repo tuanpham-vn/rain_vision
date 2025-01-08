@@ -95,14 +95,14 @@ function formatDateTime(dateTimeStr) {
     
     if (match) {
         const [_, year, month, day, hours, minutes] = match;
-        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+        const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 
             'July', 'August', 'September', 'October', 'November', 'December'];
         const monthName = monthNames[parseInt(month) - 1];
-
+        
         // Trả về chuỗi đã định dạng với ký tự xuống dòng
         return `${monthName} ${parseInt(day)}\n${hours}:${minutes}`;
     }
-
+    
     // Nếu không khớp định dạng, trả về chuỗi gốc
     return dateTimeStr;
 }
@@ -113,7 +113,7 @@ function updateTimeDisplayPosition() {
     const sliderRect = slider.getBoundingClientRect();
     const thumbPosition = (slider.value - slider.min) / (slider.max - slider.min);
     const thumbOffset = thumbPosition * sliderRect.width;
-
+    
     timeDisplay.style.left = `${thumbOffset}px`;
 }
 
@@ -121,11 +121,11 @@ function updateMap(index) {
     if (currentOverlay) {
         map.removeLayer(currentOverlay);
     }
-
+    
     currentOverlay = L.imageOverlay(currentData[index].url, layerBounds[currentLayer], {
         opacity: 0.7
     }).addTo(map);
-
+    
     timeSlider.value = index;
     currentTime.textContent = formatDateTime(currentData[index].time);
     updateTimeDisplayPosition();
@@ -179,7 +179,7 @@ playButton.addEventListener('click', () => {
     const playIcon = playButton.querySelector('i');
     playIcon.classList.remove(isPlaying ? 'fa-play' : 'fa-pause');
     playIcon.classList.add(isPlaying ? 'fa-pause' : 'fa-play');
-
+    
     if (isPlaying) {
         playInterval = setInterval(playAnimation, 1000 / playbackSpeed);
     } else {
@@ -190,7 +190,7 @@ playButton.addEventListener('click', () => {
 timeSlider.addEventListener('input', (e) => {
     currentIndex = parseInt(e.target.value);
     updateMap(currentIndex);
-
+    
     if (isPlaying) {
         isPlaying = false;
         const playIcon = playButton.querySelector('i');
@@ -256,11 +256,11 @@ const endTime = document.getElementById('endTime');
 const fetchButton = document.getElementById('fetchData');
 
 // Set giá trị mặc định cho các input
-const today = new Date();
+const today = new Date('2025-01-06');
 startDate.value = today.toISOString().split('T')[0];
-startTime.value = '00:00';
+startTime.value = '08:00';
 endDate.value = today.toISOString().split('T')[0];
-endTime.value = '23:55';
+endTime.value = '10:00';
 
 // Xử lý sự kiện khi click nút fetch
 fetchButton.addEventListener('click', async () => {
