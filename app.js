@@ -45,19 +45,19 @@ const layerData = {
         { url: 'images/rainsat/2025-01-06_0955_colored.png', time: '2025-01-06 09:55', amount: '3.4' }
         ],
     himawari: [
-        { url: 'images/himawari/2025-01-04_2100.png', time: '2025-01-06 08:00', amount: '2.5' },
-        { url: 'images/himawari/2025-01-04_2110.png', time: '2025-01-06 08:10', amount: '3.2' },
-        { url: 'images/himawari/2025-01-04_2120.png', time: '2025-01-06 08:20', amount: '4.1' },
-        { url: 'images/himawari/2025-01-04_2130.png', time: '2025-01-06 08:30', amount: '5.7' },
-        { url: 'images/himawari/2025-01-04_2140.png', time: '2025-01-06 08:40', amount: '4.8' },
-        { url: 'images/himawari/2025-01-04_2150.png', time: '2025-01-06 08:50', amount: '3.9' },
-        { url: 'images/himawari/2025-01-04_2200.png', time: '2025-01-06 09:00', amount: '3.3' },
-        { url: 'images/himawari/2025-01-04_2210.png', time: '2025-01-06 09:10', amount: '2.8' },
-        { url: 'images/himawari/2025-01-04_2220.png', time: '2025-01-06 09:20', amount: '2.2' },
-        { url: 'images/himawari/2025-01-04_2230.png', time: '2025-01-06 09:30', amount: '1.5' },
-        { url: 'images/himawari/2025-01-04_2240.png', time: '2025-01-06 09:40', amount: '1.5' },
-        { url: 'images/himawari/2025-01-04_2250.png', time: '2025-01-06 09:50', amount: '1.5' },
-        { url: 'images/himawari/2025-01-04_2250.png', time: '2025-01-06 10:00', amount: '1.5' }
+        { url: 'images/himawari/2025-01-06_0800.png', time: '2025-01-06 08:00', amount: '2.5' },
+        { url: 'images/himawari/2025-01-06_0810.png', time: '2025-01-06 08:10', amount: '3.2' },
+        { url: 'images/himawari/2025-01-06_0820.png', time: '2025-01-06 08:20', amount: '4.1' },
+        { url: 'images/himawari/2025-01-06_0830.png', time: '2025-01-06 08:30', amount: '5.7' },
+        { url: 'images/himawari/2025-01-06_0840.png', time: '2025-01-06 08:40', amount: '4.8' },
+        { url: 'images/himawari/2025-01-06_0850.png', time: '2025-01-06 08:50', amount: '3.9' },
+        { url: 'images/himawari/2025-01-06_0900.png', time: '2025-01-06 09:00', amount: '3.3' },
+        { url: 'images/himawari/2025-01-06_0910.png', time: '2025-01-06 09:10', amount: '2.8' },
+        { url: 'images/himawari/2025-01-06_0920.png', time: '2025-01-06 09:20', amount: '2.2' },
+        { url: 'images/himawari/2025-01-06_0930.png', time: '2025-01-06 09:30', amount: '1.5' },
+        { url: 'images/himawari/2025-01-06_0940.png', time: '2025-01-06 09:40', amount: '1.8' },
+        { url: 'images/himawari/2025-01-06_0950.png', time: '2025-01-06 09:50', amount: '2.1' },
+        { url: 'images/himawari/2025-01-06_1000.png', time: '2025-01-06 10:00', amount: '2.5' }
     ]
 };
 const layerIntervals = {
